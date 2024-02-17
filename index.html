@@ -1,75 +1,228 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-        <!-- all meta tag is here -->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<!-- all meta tag is here -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- title and favicon is here -->
-        <title>Assignment title</title>
-        <link
-            rel="shortcut icon"
-            href="./images/favicon.png"
-            type="image/x-icon"
-        />
+		<!-- title and favicon is here -->
+		<title>Bus Ticket Landing Page</title>
+		<link
+			rel="shortcut icon"
+			href="./images/favicon.png"
+			type="image/x-icon"
+		/>
 
-        <!-- google fonts and font awesome icon is here -->
-        <link rel="stylesheet" href="" />
-        <link rel="stylesheet" href="" />
+		<!-- google fonts and font awesome icon is here -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/7ff1a9fbcd.js"
+			crossorigin="anonymous"
+		></script>
 
-        <!-- tailwind and daisyUI is here -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
-            rel="stylesheet"
-            type="text/css"
-        />
-        <script src="https://cdn.tailwindcss.com"></script>
+		<!-- tailwind and daisyUI is here -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
 
-<!-- ========================================================================== -->
-<!-- ========================================================================== -->
+		<!-- ========================================================================== -->
+		<!-- ========================================================================== -->
 
-        <!-- tailwind coustom color code is here -->
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            clifford: "#da373d",
-                        },
-                    },
-                },
-            };
-        </script>
+		<!-- tailwind coustom color code is here -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							theme: "#1DD100",
+							theme_hover: "#1DD050",
+							btn_clr: "rgba(29, 209, 0, 0.1)",
+							btn_clr_hover: "rgba(29, 209, 0, 0.4)",
+							link: "rgba(3, 7, 18, 0.7)",
+						},
+					},
+				},
+			};
+		</script>
 
-        <!-- tailwind coustom style is here -->
-        <style type="text/tailwindcss">
-            @layer utilities {
-                .content-auto {
-                    content-visibility: auto;
-                }
-            }
-        </style>
-    </head>
+		<!-- tailwind coustom style is here -->
+		<style type="text/tailwindcss">
+			@layer utilities {
+				.raleway {
+					font-family: "Raleway", sans-serif;
+				}
 
-    <!-- body tag is here -->
-    <body>
-        <!-- header section is here -->
-        <header class="container mx-auto">
-            
-        </header>
+				.inter {
+					font-family: "inter", sans-serif;
+				}
+			}
+		</style>
+	</head>
 
-        <!-- main section is here -->
-        <main class="container mx-auto">
-            
-        </main>
+	<!-- body tag is here -->
+	<body>
+		<!-- header section is here -->
+		<header class="container mx-auto mt-14">
+			<!-- navbar -->
+			<nav>
+				<div
+					class="navbar bg-base-100 text-link font-medium text-lg raleway"
+				>
+					<!-- logo is here -->
+					<div class="navbar-start">
+						<div class="dropdown">
+							<div
+								tabindex="0"
+								role="button"
+								class="btn btn-ghost lg:hidden"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-5 w-5"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M4 6h16M4 12h8m-8 6h16"
+									/>
+								</svg>
+							</div>
+							<ul
+								tabindex="0"
+								class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+							>
+								<li><a>Home</a></li>
+								<li><a>About</a></li>
+								<li><a>Destination</a></li>
+								<li><a>Search</a></li>
+							</ul>
+						</div>
+						<a
+							class="raleway text-[#030712] font-extrabold text-4xl"
+							>P-Ticket</a
+						>
+					</div>
 
-        <!-- footer section is here -->
-        <footer class="w-full">
-            
-        </footer>
+					<!-- link is here -->
+					<div class="navbar-center hidden lg:flex">
+						<ul class="menu menu-horizontal px-1">
+							<li><a>Home</a></li>
+							<li><a>About</a></li>
+							<li><a>Destination</a></li>
+							<li><a>Search</a></li>
+						</ul>
+					</div>
 
-        <!-- all JavaScript file is here -->
-        <script src="./js/index.js"></script>
-        <script src="./js/utils.js"></script>
-    </body>
+					<!-- bus logo is here -->
+					<div class="navbar-end">
+						<div
+							class="btn bg-btn_clr hover:bg-btn_clr_hover rounded-xl border-theme"
+						>
+							<a
+								href="#"
+								class="text-theme text-xl font-bold raleway"
+								>Bus</a
+							>
+							<img src="./images/bus-icon.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<!-- banner section is here -->
+			<div
+				class="banner w-full h-[60vh] mt-9 flex flex-col gap-4 items-center pt-10 lg:pt-7"
+				style="
+					border-radius: 32px;
+					background: linear-gradient(
+							180deg,
+							rgba(3, 7, 18, 0.2) 0%,
+							rgba(3, 7, 18, 0) 100%
+						),
+						url(./images/banner.png),
+						lightgray 50% / cover no-repeat;
+					background-size: 100% 100%;
+				"
+			>
+                <!-- banner title is here -->
+				<h1
+					class="text-center text-3xl lg:text-6xl raleway font-extrabold leading-10 lg:leading-[86px] text-white"
+				>
+					End-to-End Travel with <br /><span class="text-theme"
+						>P Paribahan</span
+					>
+				</h1>
+
+                <!-- banner discription is here -->
+				<p class="text-center lg:w-4/5 text-white text-sm lg:text-lg lg:leading-8">
+					Yes, you can run unit tests and view the results directly
+					within the app. The
+					integrated testing features allow for a streamlined .
+				</p>
+
+                <!-- banner button is here -->
+				<button
+					class="btn mt-4 border-none bg-theme hover:bg-theme_hover text-xl text-[#030712] font-bold raleway rounded-xl"
+				>
+					<a href="#ticketSell">Buy Tickets</a>
+				</button>
+
+                <!-- website info section is here -->
+                <div class="flex flex-wrap justify-center gap-10 lg:gap-6 mt-10">
+                    <!-- card 1 -->
+                    <div class="flex gap-4 items-center bg-white p-8 rounded-3xl border-b-4 border-theme">
+                        <img width="64px" height="64px" src="./images/people.png" alt="">
+                        <div>
+                            <h1 class="text-4xl font-bold inter text-[#030712]">500K+</h1>
+                            <p class="text-link text-lg inter">Registered users</p>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="flex gap-4 items-center bg-white p-8 rounded-3xl border-b-4 border-theme">
+                        <img width="64px" height="64px" src="./images/ticket-cupon.png" alt="">
+                        <div>
+                            <h1 class="text-4xl font-bold inter text-[#030712]">1.7 lacks</h1>
+                            <p class="text-link text-lg inter">Tickets sold</p>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="flex gap-4 items-center bg-white p-8 rounded-3xl border-b-4 border-theme">
+                        <img width="64px" height="64px" src="./images/stoppage.png" alt="">
+                        <div>
+                            <h1 class="text-4xl font-bold inter text-[#030712]">80K+</h1>
+                            <p class="text-link text-lg inter">Rental partners</p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</header>
+
+		<!-- main section is here -->
+		<main class="container mx-auto"></main>
+
+		<!-- footer section is here -->
+		<footer class="w-full"></footer>
+
+		<!-- all JavaScript file is here -->
+		<script src="./js/index.js"></script>
+		<script src="./js/utils.js"></script>
+	</body>
 </html>
