@@ -75,6 +75,12 @@
 				.calc {
 					width: calc(50% - 12px);
 				}
+
+				.green {
+					background: rgba(29, 209, 0, 1);
+					color: white;
+					font-weight: 500;
+				}
 			}
 		</style>
 	</head>
@@ -123,7 +129,7 @@
 						</div>
 						<a
 							class="raleway text-[#030712] font-extrabold text-4xl"
-							>P-Ticket</a
+							>E-Ticket</a
 						>
 					</div>
 
@@ -155,7 +161,7 @@
 
 			<!-- banner section is here -->
 			<div
-				class="banner w-full h-[60vh] mt-9 flex flex-col gap-4 items-center pt-7 lg:pt-24"
+				class="banner relative w-full h-[60vh] mt-9 flex flex-col gap-4 items-center pt-7 lg:pt-24"
 				style="
 					border-radius: 32px;
 					background: linear-gradient(
@@ -173,7 +179,7 @@
 					class="text-center text-3xl lg:text-6xl raleway font-extrabold leading-10 lg:leading-[86px] text-white"
 				>
 					End-to-End Travel with <br /><span class="text-theme"
-						>P Paribahan</span
+						>NS Paribahan</span
 					>
 				</h1>
 
@@ -195,7 +201,7 @@
 
 				<!-- website info section is here -->
 				<div
-					class="flex flex-wrap justify-center gap-10 lg:gap-6 mt-16"
+					class="flex flex-wrap justify-center gap-10 lg:absolute bottom-0 translate-y-20 lg:translate-y-1/2"
 				>
 					<!-- card 1 -->
 					<div
@@ -357,7 +363,7 @@
 			>
 				<!-- section title -->
 				<h1 class="text-[#030712] text-4xl font-bold raleway">
-					P.H Paribahan
+					NS Paribahan
 				</h1>
 
 				<!-- section discription -->
@@ -372,7 +378,7 @@
 				<!-- section card -->
 				<div class="container flex flex-col gap-7 mx-auto">
 					<!-- top card -->
-					<div class="flex bg-white rounded-3xl">
+					<div class="flex flex-col lg:flex-row bg-white rounded-3xl">
 						<!-- left side -->
 						<div class="">
 							<!-- top -->
@@ -381,12 +387,16 @@
 								<div
 									class="flex items-center justify-center gap-3"
 								>
-									<img src="./images/bus-logo.png" alt="" />
+									<img
+										class=""
+										src="./images/bus-logo.png"
+										alt=""
+									/>
 									<div>
 										<h1
 											class="raleway text-3xl font-bold text-[#030712] mb-1"
 										>
-											Greenline Paribahan
+											NS Paribahan
 										</h1>
 										<p class="inter text-disc text-lg">
 											Coach-009-WEB ! AC_Business
@@ -457,7 +467,7 @@
 
 						<!-- deivder img -->
 						<img
-							class="-mr-10"
+							class="-mr-10 hidden lg:flex"
 							src="./images/info-devider.png"
 							alt=""
 						/>
@@ -482,10 +492,10 @@
 
 					<!-- down card -->
 					<div
-						class="flex divide-x divide-dashed bg-white rounded-3xl p-8 w-full"
+						class="flex flex-col lg:flex-row lg:divide-x lg:divide-dashed bg-white rounded-3xl p-8 w-full"
 					>
 						<!-- left side -->
-						<div class="w-[60%] mr-8">
+						<div class="lg:w-[60%] lg:mr-8">
 							<!-- top side -->
 							<div class="divide-y divide-dashed w-full">
 								<!-- title -->
@@ -600,257 +610,263 @@
 									</div>
 
 									<!-- seat paln -->
-									<div class="grid grid-cols-12 gap-6 w-full">
-										<!-- col 1 -->
-										<div class="grid col-span-3 space-y-6">
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												a1
-											</button>
+									<div
+										class="grid grid-cols-2 w-full gap-6 lg:gap-12"
+									>
+										<div class="grid grid-cols-2 gap-4">
+											<!-- col 1 -->
+											<div class="grid space-y-4">
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													a1
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												b1
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													b1
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												c1
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													c1
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												d1
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													d1
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												e1
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													e1
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												f1
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													f1
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												g1
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													g1
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												h1
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													h1
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												i1
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													i1
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												j1
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													j1
+												</button>
+											</div>
+
+											<!-- col 2 -->
+											<div class="grid space-y-4">
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													a2
+												</button>
+
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													b2
+												</button>
+
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													c2
+												</button>
+
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													d2
+												</button>
+
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													e2
+												</button>
+
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													f2
+												</button>
+
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													g2
+												</button>
+
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													h2
+												</button>
+
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													i2
+												</button>
+
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													j2
+												</button>
+											</div>
 										</div>
 
-										<!-- col 2 -->
-										<div class="grid col-span-3 space-y-6">
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												a2
-											</button>
+										<div class="grid grid-cols-2 gap-4">
+											<!-- col 3 -->
+											<div class="grid space-y-4">
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													a3
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												b2
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													b3
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												c2
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													c3
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												d2
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													d3
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												e2
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													e3
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												f2
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													f3
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												g2
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													g3
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												h2
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													h3
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												i2
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													i3
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												j2
-											</button>
-										</div>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													j3
+												</button>
+											</div>
 
-										<!-- col 3 -->
-										<div class="grid col-span-3 space-y-6">
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												a3
-											</button>
+											<!-- col 4 -->
+											<div class="grid space-y-4">
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													a4
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												b3
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													b4
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												c3
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													c4
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												d3
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													d4
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												e3
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													e4
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												f3
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													f4
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												g3
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													g4
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												h3
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													h4
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												i3
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													i4
+												</button>
 
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												j3
-											</button>
-										</div>
-
-										<!-- col 4 -->
-										<div class="grid col-span-3 space-y-6">
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												a4
-											</button>
-
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												b4
-											</button>
-
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												c4
-											</button>
-
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												d4
-											</button>
-
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												e4
-											</button>
-
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												f4
-											</button>
-
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												g4
-											</button>
-
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												h4
-											</button>
-
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												i4
-											</button>
-
-											<button
-												class="btn seat uppercase text-disc font-medium inter text-lg"
-											>
-												j4
-											</button>
+												<button
+													class="btn seat uppercase text-disc font-medium inter text-lg"
+												>
+													j4
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -858,7 +874,7 @@
 						</div>
 
 						<!-- right side -->
-						<div class="w-[40%]">
+						<div class="lg:w-[40%]">
 							<div class="w-full">
 								<div class="divide-y w-full divide-dashed pl-8">
 									<h1
@@ -902,8 +918,8 @@
 
 											<!-- ticket list -->
 											<div
-												id="seat"
-												class="grid grid-cols-3 w-[] justify-between pb-4 pt-4"
+												id="seatField"
+												class="w-full pb-4 pt-4"
 											></div>
 											<hr />
 
@@ -920,7 +936,9 @@
 													class="text-[#030712] inter font-medium"
 												>
 													BDT
-													<span id="price">0</span>
+													<span id="totalPrice"
+														>0</span
+													>
 												</p>
 											</div>
 
@@ -935,11 +953,11 @@
 													<input
 														id="coupon"
 														type="text"
-														class="outline-none border-none p-2"
+														class="outline-none w-full rounded-xl bg-white border-none p-2"
 														placeholder="Have any copupon?"
 													/>
 													<button
-														onclick="coupon()"
+														onclick="couponApply()"
 														class="btn bg-theme text-white rounded-xl"
 													>
 														Apply
@@ -1010,6 +1028,7 @@
 										Phone Number*
 									</h1>
 									<input
+										oninput="input()"
 										id="number"
 										type="number"
 										class="w-full outline-none h-16 border border-solid pl-5 rounded-xl"
@@ -1028,8 +1047,9 @@
 									/>
 
 									<button
+										id="next"
 										onclick="submit()"
-										class="btn font-extrabold text-xl raleway hover:text-link rounded-xl text-white w-full bg-theme"
+										class="btn font-extrabold text-xl hidden raleway hover:text-link rounded-xl text-white w-full bg-theme"
 									>
 										Next
 									</button>
@@ -1094,14 +1114,16 @@
 		</main>
 
 		<!-- footer section is here -->
-		<footer class="w-full mt-10 pt-28 pb-28 bg-[#030712]">
-			<div class="container mx-auto flex justify-between items-center">
+		<footer id="footer" class="w-full mt-10 pt-28 pb-28 bg-[#030712]">
+			<div
+				class="container mx-auto flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between items-center"
+			>
 				<div class="flex gap-4 flex-col">
 					<h1 class="text-white raleway text-4xl font-extrabold">
-						P-Ticket
+						E-Ticket
 					</h1>
 					<p class="inter text-lg leading-8 text-color">
-						P-Ticket is a digital platform to make your <br />
+						E-Ticket is a digital platform to make your <br />
 						daily commuting better.
 					</p>
 				</div>
@@ -1118,13 +1140,15 @@
 
 			<hr class="container mx-auto mt-5 mb-5" />
 
-			<div class="container mx-auto flex justify-between">
-				<div class="">
+			<div
+				class="container mx-auto flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between"
+			>
+				<div class="text-center">
 					<p class="text-color inter">
-						@all rights reserved, P-Ticket services limited.2024
+						@all rights reserved, E-Ticket services limited.2024
 					</p>
 				</div>
-				<div class="flex gap-5">
+				<div class="flex gap-5 mx-auto lg:mx-0">
 					<p class="text-white inter">Terms & condition</p>
 					<p class="text-white inter">Return & refund policy</p>
 					<p class="text-white inter">Privacy policy</p>

@@ -1,59 +1,59 @@
 const seats = document.querySelectorAll(".seat");
-let seatCount = 0;
-let seatField = document.getElementById("seat");
-const seatClass = "Economoy";
+const seatCount = document.getElementById("seatCount");
+const seatLeft = document.getElementById("seatLeft");
+const seatField = document.getElementById("seatField");
+const coupon = document.getElementById("couponField");
+let totalPrice = document.getElementById("totalPrice");
+let grandTotalPrice = document.getElementById("grandTotalPrice");
+
 const ticketPrice = 550;
+const couponOne = "NEW15";
+const couponTwo = "Couple 20";
+let activeSeat = 0;
+
 for (const seat of seats) {
 	seat.addEventListener("click", function () {
-		let seatName = document.createElement("p");
-		let seatclass = document.createElement("p");
-		let price = document.createElement("p");
-		if (seat.classList.contains("bg-theme_btn")) {
-			seat.classList.remove("bg-theme_btn", "text-white");
-			seatName.classList.remove("seatName");
-			seatName.setAttribute("id", "toRemove");
-		} else {
-			seat.classList.add("bg-theme_btn", "text-white");
-			seatName.classList.add("seatName", "text-left");
-		}
-		seatCount = document.querySelectorAll(".bg-theme_btn").length;
+		let seatFieldElementCount =
+			document.getElementById("seatField").childElementCount;
+		if (activeSeat < 4 || seat.classList.contains("green")) {
+			if (seat.classList.contains("green")) {
+				delClass(seat, "green");
+				activeSeat--;
+				seatCount.innerText = activeSeat;
+				seatLeft.innerText++;
 
-		if (seatCount > 4) {
-			alert("You can not buy more then 4 seats");
-			seat.classList.remove("bg-theme_btn");
-			seatCount = 4;
-		}
+				for (let i = 0; i < seatFieldElementCount; i++) {
+					if (
+						Boolean(seat.classList.contains(`num_${i}`)) == true &&
+						Boolean(document.getElementById(`num_${i}`)) == true
+					) {
+						document.getElementById(`num_${i}`).innerHTML = "";
+					} else {
+						continue;
+					}
+				}
+				totalPrice.innerText = ticketPrice * activeSeat;
+				grandTotalPrice.innerText = ticketPrice * activeSeat;
 
-		document.getElementById("seatCount").innerText = seatCount;
+				if (activeSeat === 0) {
+					addClassById("couponField", "hidden");
+				}
+			} else {
+				addClass(seat, "green");
+				activeSeat++;
+				seatCount.innerText = activeSeat;
+				seatLeft.innerText = 40 - activeSeat;
+				seatField.innerHTML += `<div id="num_${seatFieldElementCount}" class="flex justify-between"><p class="text-left">${seat.innerText}</p>
+                <p class="text-center">Economoy</p>
+                <p class="text-right">550</p> </div>`;
+				seat.classList.add(`num_${seatFieldElementCount}`);
+				totalPrice.innerText = ticketPrice * activeSeat;
+				grandTotalPrice.innerText = ticketPrice * activeSeat;
 
-		document.getElementById("seatLeft").innerText = 40 - seatCount;
-
-		seatclass.classList.add("text-center");
-		price.classList.add("text-right");
-		seatclass.innerText = seatClass;
-		price.innerText = ticketPrice;
-
-		if (seatName.classList.contains("seatName")) {
-			seatName.innerText = seat.innerText;
-			seatField.appendChild(seatName);
-			seatField.appendChild(seatclass);
-			seatField.appendChild(price);
-		} else if (
-			seatName.classList.contains(".toRemove") &&
-			seatField.getElementById("toRemove").innerText == seatName
-		) {
-			document.getElementById("toRemove").innerText = "";
-		}
-
-		document.getElementById("price").innerText = seatCount * ticketPrice;
-		document.getElementById("grandTotalPrice").innerText =
-			seatCount * ticketPrice;
-
-		if (seatCount > 0) {
-			document.getElementById("couponField").classList.remove("hidden");
-		} else {
-			document.getElementById("couponField").classList.add("hidden");
-			document.getElementById("discount").classList.add("hidden");
+				if (activeSeat > 0) {
+					delClassById("couponField", "hidden");
+				}
+			}
 		}
 	});
 }

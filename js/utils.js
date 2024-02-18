@@ -1,42 +1,68 @@
-function coupon() {
-	const couponOne = "NEW15";
-	const couponTwo = "Couple 20";
-	const coupon = document.getElementById("coupon").value;
+function addClassById(elementId, prop) {
+	document.getElementById(`${elementId}`).classList.add(`${prop}`);
+}
 
-	if (coupon === couponOne) {
-		document.getElementById("couponField").classList.add("hidden");
-		document.getElementById("discount").classList.remove("hidden");
-		document.getElementById("discount").classList.add("flex");
+function delClassById(elementId, prop) {
+	document.getElementById(`${elementId}`).classList.remove(`${prop}`);
+}
 
+function addClass(elementId, prop) {
+	elementId.classList.add(`${prop}`);
+}
+
+function delClass(elementId, prop) {
+	elementId.classList.remove(`${prop}`);
+}
+
+function couponApply() {
+	let couponCode = document.getElementById("coupon").value;
+
+	if (couponCode == couponOne) {
 		document.getElementById("discountPrice").innerText =
-			ticketPrice * seatCount * 0.15;
+			grandTotalPrice.innerText * 0.15;
+		grandTotalPrice.innerText =
+			grandTotalPrice.innerText - grandTotalPrice.innerText * 0.15;
 
-		document.getElementById("grandTotalPrice").innerText =
-			ticketPrice * seatCount - ticketPrice * seatCount * 0.15;
-	} else if (coupon === couponTwo) {
-		document.getElementById("couponField").classList.add("hidden");
-		document.getElementById("discount").classList.remove("hidden");
-		document.getElementById("discount").classList.add("flex");
-
+		addClassById("couponField", "hidden");
+		delClassById("discount", "hidden");
+		addClassById("discount", "flex");
+	} else if (couponCode == couponTwo) {
 		document.getElementById("discountPrice").innerText =
-			ticketPrice * seatCount * 0.2;
+			grandTotalPrice.innerText * 0.2;
+		grandTotalPrice.innerText =
+			grandTotalPrice.innerText - grandTotalPrice.innerText * 0.2;
 
-		document.getElementById("grandTotalPrice").innerText =
-			ticketPrice * seatCount - ticketPrice * seatCount * 0.2;
+		addClassById("couponField", "hidden");
+		delClassById("discount", "hidden");
+		addClassById("discount", "flex");
 	} else {
-		alert("invalid coupon or insert your number");
 		document.getElementById("coupon").value = "";
+
+		alert("invalid coupon");
+	}
+}
+
+function input() {
+	const num = `${parseInt(document.getElementById("number").value)}`;
+	if (num.length === 10 && activeSeat > 0) {
+		document.getElementById("next").classList.remove("hidden");
+	} else if (document.getElementById("next").classList.contains("hidden")) {
+		return;
+	} else {
+		document.getElementById("next").classList.add("hidden");
 	}
 }
 
 function submit() {
 	if (
 		document.getElementById("number").value &&
-		document.getElementById("pName").value
+		document.getElementById("pName").value &&
+		activeSeat > 0
 	) {
 		document.getElementById("header").classList.add("hidden");
 		document.getElementById("ticketSell").classList.add("hidden");
 		document.getElementById("offer").classList.add("hidden");
+		document.getElementById("footer").classList.add("hidden");
 		document.getElementById("body").classList.add("bg-[#F2F1F1]");
 		my_modal_1.showModal();
 	} else {
@@ -48,5 +74,6 @@ function unHide() {
 	document.getElementById("header").classList.remove("hidden");
 	document.getElementById("ticketSell").classList.remove("hidden");
 	document.getElementById("offer").classList.remove("hidden");
+	document.getElementById("footer").classList.remove("hidden");
 	document.getElementById("body").classList.remove("bg-[#F2F1F1]");
 }
