@@ -121,14 +121,14 @@
 								tabindex="0"
 								class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
 							>
-								<li><a>Home</a></li>
-								<li><a>About</a></li>
-								<li><a>Destination</a></li>
-								<li><a>Search</a></li>
+								<li><a class="text-link text-lg raleway font-medium">Home</a></li>
+								<li><a class="text-link text-lg raleway font-medium">About</a></li>
+								<li><a class="text-link text-lg raleway font-medium">Destination</a></li>
+								<li><a class="text-link text-lg raleway font-medium">Search</a></li>
 							</ul>
 						</div>
 						<a
-							class="raleway text-[#030712] font-extrabold text-4xl"
+							class="raleway text-[#030712] font-extrabold text-2xl lg:text-4xl"
 							>E-Ticket</a
 						>
 					</div>
@@ -136,10 +136,10 @@
 					<!-- link is here -->
 					<div class="navbar-center hidden lg:flex">
 						<ul class="menu menu-horizontal px-1">
-							<li><a>Home</a></li>
-							<li><a>About</a></li>
-							<li><a>Destination</a></li>
-							<li><a>Search</a></li>
+							<li><a class="text-link text-lg raleway font-medium">Home</a></li>
+							<li><a class="text-link text-lg raleway font-medium">About</a></li>
+							<li><a class="text-link text-lg raleway font-medium">Destination</a></li>
+							<li><a class="text-link text-lg raleway font-medium">Search</a></li>
 						</ul>
 					</div>
 
@@ -185,7 +185,7 @@
 
 				<!-- banner discription is here -->
 				<p
-					class="text-center lg:w-4/5 text-white text-sm lg:text-lg lg:leading-8"
+					class="text-center lg:w-2/5 text-white text-sm lg:text-lg lg:leading-8"
 				>
 					Yes, you can run unit tests and view the results directly
 					within the app. The integrated testing features allow for a
@@ -201,7 +201,7 @@
 
 				<!-- website info section is here -->
 				<div
-					class="flex flex-wrap justify-center gap-10 lg:absolute bottom-0 translate-y-20 lg:translate-y-1/2"
+					class="grid grid-cols-1 lg:flex flex-wrap justify-center gap-10 relative lg:absolute bottom-0 translate-y-44 lg:translate-y-1/2"
 				>
 					<!-- card 1 -->
 					<div
@@ -269,7 +269,7 @@
 			<!-- best offer section is here -->
 			<section
 				id="offer"
-				class="offer success w-full mb-20 container mx-auto mt-[650px] lg:mt-32 flex flex-col items-center gap-12"
+				class="offer success w-full mt-[700px] sm:mt-[650px] md:mt-[600px] mb-20 container mx-auto  lg:mt-32 flex flex-col items-center gap-12"
 			>
 				<!-- section title -->
 				<h1 class="text-[#030712] raleway text-4xl font-bold">
@@ -281,7 +281,7 @@
 					<!-- card 1 -->
 					<div class="flex flex-col lg:flex-row rounded-3xl bg-[#FFBF0F]">
 						<!-- left side -->
-						<div class="p-6 text-center lg:p-12 lg:w-[60%] flex flex-col justify-center">
+						<div class="p-6 text-left lg:p-12 lg:w-[70%] flex flex-col justify-center">
 							<h1
 								class="text-title text-4xl font-[900] inter leading-9"
 							>
@@ -303,7 +303,7 @@
 						<!-- right side -->
 						<div class="p-6 flex w-full lg:w-[40%] text-center flex-col justify-center">
 							<h1
-								class="text-title text-4xl font-[900] raleway leading-[58px]"
+								class="text-black text-4xl font-[900] raleway leading-[58px]"
 							>
 								NEW15
 							</h1>
@@ -316,7 +316,7 @@
 					<!-- card 2 -->
 					<div class="flex flex-col lg:flex-row rounded-3xl bg-[#F78C9C]">
 						<!-- left side -->
-						<div class="p-6 lg:p-12 flex flex-col justify-center text-center lg:w-[60%]">
+						<div class="p-6 lg:p-12 flex flex-col justify-center text-left lg:w-[70%]">
 							<h1
 								class="text-title text-4xl font-[900] inter leading-9"
 							>
@@ -338,7 +338,7 @@
 						<!-- right side -->
 						<div class="p-6 flex flex-col text-center lg:w-[40%]  justify-center">
 							<h1
-								class="text-title text-4xl font-[900] raleway leading-[58px]"
+								class="text-black text-4xl font-[900] raleway leading-[58px]"
 							>
 								Couple 20
 							</h1>
@@ -359,7 +359,7 @@
 			<!-- ticketing section is here -->
 			<section
 				id="ticketSell"
-				class="ticketing success mt-10 border-t-4 border-theme rounded-[88px] pt-[120px] flex flex-col items-center bg-[#F7F8F8]"
+				class="ticketing success mt-10 border-t-4 border-theme rounded-t-[88px] pt-[60px] pb-[80px] lg:pt-[120px] flex flex-col items-center bg-[#F7F8F8]"
 			>
 				<!-- section title -->
 				<h1 class="text-[#030712] text-4xl font-bold raleway">
@@ -449,17 +449,17 @@
 									<button
 										class="btn text-title text-base font-medium inter"
 									>
-										Boarding Poing - Laxmipur
+									Boarding Point - Laxmipur
 									</button>
 									<button
 										class="btn text-title text-base font-medium inter"
 									>
-										Boarding Poing - Laxmipur
+									Dropping Point - Bogura
 									</button>
 									<button
 										class="btn text-title text-base font-medium inter"
 									>
-										Boarding Poing - Laxmipur
+									Est. Time - 11 Hour
 									</button>
 								</div>
 							</div>
@@ -611,7 +611,7 @@
 
 									<!-- seat paln -->
 									<div
-										class="grid grid-cols-2 w-full gap-6 lg:gap-12"
+										class="grid grid-cols-2 w-full gap-8 lg:gap-20"
 									>
 										<div class="grid grid-cols-2 gap-4">
 											<!-- col 1 -->
@@ -876,7 +876,7 @@
 						<!-- right side -->
 						<div class="lg:w-[40%]">
 							<div class="w-full ">
-								<div class="divide-y mt-8 lg:mt-0 w-full divide-dashed pl-8">
+								<div class="divide-y mt-8 lg:mt-0 w-full divide-dashed lg:pl-8">
 									<h1
 										class="text-2xl font-semibold raleway text-[030712] mb-6"
 									>
@@ -892,12 +892,12 @@
 												class="mt-4 flex justify-between w-full mb-4"
 											>
 												<h1
-													class="text-[#030712] font-medium inter w-[20%]"
+													class="text-[#030712] font-medium inter lg:w-[20%]"
 												>
 													Seat
 													<sup
 														id="seatCount"
-														class="bg-theme font-bold px-3 py-1 text-white rounded-2xl"
+														class="bg-theme font-bold px-2 lg:px-3 py-1 text-white rounded-2xl"
 														>0</sup
 													>
 												</h1>
@@ -928,12 +928,12 @@
 												class="flex justify-between pt-4"
 											>
 												<p
-													class="text-[#030712] inter font-medium"
+													class="text-[#030712] inter font-semibold"
 												>
 													Total Price
 												</p>
 												<p
-													class="text-[#030712] inter font-medium"
+													class="text-[#030712] inter font-semibold"
 												>
 													BDT
 													<span id="totalPrice"
@@ -948,12 +948,12 @@
 												class="pt-4 mt-4 hidden"
 											>
 												<div
-													class="bg-white w-full flex justify-between p-3 rounded-3xl"
+													class="bg-white w-full flex justify-between lg:p-3 rounded-3xl"
 												>
 													<input
 														id="coupon"
 														type="text"
-														class="outline-none w-full rounded-xl bg-white border-none p-2"
+														class="outline-none w-full rounded-xl bg-white border-none p-2 placeholder:text-sm lg:placeholder:text-lg"
 														placeholder="Have any copupon?"
 													/>
 													<button
@@ -971,12 +971,12 @@
 												class="justify-between mt-4 hidden"
 											>
 												<p
-													class="text-[#030712] inter font-medium"
+													class="text-[#030712] inter font-semibold"
 												>
 													Discount Price
 												</p>
 												<p
-													class="text-[#030712] inter font-medium"
+													class="text-[#030712] inter font-semibold"
 												>
 													BDT
 													<span id="discountPrice"
@@ -991,12 +991,12 @@
 												class="justify-between mt-4 flex"
 											>
 												<p
-													class="text-[#030712] inter font-medium"
+													class="text-[#030712] inter font-semibold"
 												>
 													Grand Total
 												</p>
 												<p
-													class="text-[#030712] inter font-medium"
+													class="text-[#030712] inter font-semibold"
 												>
 													BDT
 													<span id="grandTotalPrice"
@@ -1009,7 +1009,7 @@
 								</div>
 
 								<!-- input area -->
-								<div class="pl-8 pt-4 flex flex-col gap-4">
+								<div class="lg:pl-8 pt-4 flex flex-col gap-2 lg:gap-4">
 									<h1
 										class="text-[#030712] inter font-semibold text-lg"
 									>
@@ -1018,12 +1018,12 @@
 									<input
 										id="pName"
 										type="text"
-										class="w-full outline-none h-16 border border-solid pl-5 rounded-xl"
+										class="w-full outline-none h-12 lg:h-16 border border-solid pl-5 rounded-xl"
 										placeholder="Enter your name"
 									/>
 
 									<h1
-										class="text-[#030712] inter font-semibold mt-2 text-lg"
+										class="text-[#030712] inter font-semibold mt-3 lg:mt-2 text-lg"
 									>
 										Phone Number*
 									</h1>
@@ -1031,7 +1031,7 @@
 										oninput="input()"
 										id="number"
 										type="number"
-										class="w-full outline-none h-16 border border-solid pl-5 rounded-xl"
+										class="w-full outline-none h-12 lg:h-16 border border-solid pl-5 rounded-xl"
 										placeholder="Enter your phone number"
 									/>
 
@@ -1042,7 +1042,7 @@
 									</h1>
 									<input
 										type="email"
-										class="w-full outline-none h-16 border border-solid pl-5 rounded-xl"
+										class="w-full outline-none h-12 lg:h-16 border border-solid pl-5 rounded-xl"
 										placeholder="Enter your email id"
 									/>
 
@@ -1050,12 +1050,12 @@
 										disabled
 										id="next"
 										onclick="submit()"
-										class="btn font-extrabold text-xl disabled:opacity-75 raleway hover:text-link rounded-xl text-white w-full bg-theme"
+										class="btn font-extrabold text-xl disabled:opacity-75 mt-3 lg:mt-0 raleway hover:text-link rounded-xl text-white w-full bg-theme"
 									>
 										Next
 									</button>
 
-									<div class="flex justify-around">
+									<div class="flex flex-col lg:flex-row items-center gap-2 lg:justify-around">
 										<a
 											href="#"
 											class="text-link inter underline"
@@ -1081,20 +1081,20 @@
 					<div
 						class="bg-white rounded-2xl flex flex-col items-center justify-center"
 					>
-						<img src="./images/success.png" alt="" class="mt-14" />
+						<img src="./images/success.png" alt="" class="mt-5 lg:mt-14 w-16 md:w-24" />
 						<p
-							class="py-4 text-[#27ae60] text-center text-2xl font-bold inter uppercase"
+							class="lg:py-4 text-[#27ae60] text-center text-xl lg:text-2xl mt-2 lg:mt-0 font-bold inter uppercase"
 						>
 							success
 						</p>
 						<h1
-							class="text-center w-[80%] text-[#4a4a4a] inter font-medium text-xl"
+							class="text-center w-[90%] lg:w-[80%] text-[#4a4a4a] inter font-medium text-lg lg:text-xl"
 						>
 							Thank you for Booking Our Bus Seats. We are working
 							hard to find the best service and deals for you
 						</h1>
 						<p
-							class="text-center mt-2 text-[#4a4a4a] inter text-xl font-light leading-[168%]"
+							class="text-center mt-2 text-[#4a4a4a] inter text-lg w-[90%] lg:w-full lg:text-xl font-light lg:leading-[168%]"
 						>
 							Shortly you will find a confirmation in your email.
 						</p>
@@ -1103,7 +1103,7 @@
 								<!-- if there is a button in form, it will close the modal -->
 								<button
 									onclick="unHide()"
-									class="btn bg-[#27ae60] text-white inter hover:text-link mb-14 font-semibold text-xl rounded-[32px] w-[300px]"
+									class="btn bg-[#27ae60] text-white inter hover:text-link mb-5 lg:mb-14 font-semibold text-xl rounded-[32px] w-[300px]"
 								>
 									Continue
 								</button>
@@ -1115,15 +1115,15 @@
 		</main>
 
 		<!-- footer section is here -->
-		<footer id="footer" class="w-full mt-10 pt-28 pb-28 bg-[#030712]">
+		<footer id="footer" class="w-full pt-12 lg:pt-28 pb-28 bg-[#030712]">
 			<div
 				class="container mx-auto flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between items-center"
 			>
 				<div class="flex gap-4 flex-col">
-					<h1 class="text-white raleway text-4xl font-extrabold">
+					<h1 class="text-white text-center lg:text-left raleway text-4xl font-extrabold">
 						E-Ticket
 					</h1>
-					<p class="inter text-lg leading-8 text-color">
+					<p class="inter text-sm text-center lg:text-left lg:text-lg lg:leading-8 text-color">
 						E-Ticket is a digital platform to make your <br />
 						daily commuting better.
 					</p>
@@ -1149,7 +1149,7 @@
 						@all rights reserved, E-Ticket services limited.2024
 					</p>
 				</div>
-				<div class="flex gap-5 mx-auto lg:mx-0">
+				<div class="flex flex-wrap justify-center gap-5 mx-auto lg:mx-0">
 					<p class="text-white inter">Terms & condition</p>
 					<p class="text-white inter">Return & refund policy</p>
 					<p class="text-white inter">Privacy policy</p>
