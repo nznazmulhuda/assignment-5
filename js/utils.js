@@ -45,11 +45,11 @@ function couponApply() {
 function input() {
 	const num = `${parseInt(document.getElementById("number").value)}`;
 	if (num.length === 10 && activeSeat > 0) {
-		document.getElementById("next").classList.remove("hidden");
+		document.getElementById("next").disabled = false;
 	} else if (document.getElementById("next").classList.contains("hidden")) {
 		return;
 	} else {
-		document.getElementById("next").classList.add("hidden");
+		document.getElementById("next").disabled = true;
 	}
 }
 

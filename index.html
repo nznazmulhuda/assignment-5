@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 	<head>
 		<!-- all meta tag is here -->
 		<meta charset="UTF-8" />
@@ -161,7 +161,7 @@
 
 			<!-- banner section is here -->
 			<div
-				class="banner relative w-full h-[60vh] mt-9 flex flex-col gap-4 items-center pt-7 lg:pt-24"
+				class="banner relative w-full h-[60vh] mt-9 flex flex-col gap-4 items-center pt-7 lg:pt-16"
 				style="
 					border-radius: 32px;
 					background: linear-gradient(
@@ -196,7 +196,7 @@
 				<button
 					class="btn mt-4 border-none bg-theme hover:bg-theme_hover text-xl text-[#030712] font-bold raleway rounded-xl"
 				>
-					<a href="#ticketSell">Buy Tickets</a>
+					<a href="#ticketSell" >Buy Tickets</a>
 				</button>
 
 				<!-- website info section is here -->
@@ -269,7 +269,7 @@
 			<!-- best offer section is here -->
 			<section
 				id="offer"
-				class="offer success w-full mb-20 container mx-auto mt-[550px] lg:mt-32 flex flex-col items-center gap-12"
+				class="offer success w-full mb-20 container mx-auto mt-[650px] lg:mt-32 flex flex-col items-center gap-12"
 			>
 				<!-- section title -->
 				<h1 class="text-[#030712] raleway text-4xl font-bold">
@@ -279,9 +279,9 @@
 				<!-- section card -->
 				<div class="grid lg:grid-cols-2 w-full gap-6">
 					<!-- card 1 -->
-					<div class="flex rounded-3xl bg-[#FFBF0F]">
+					<div class="flex flex-col lg:flex-row rounded-3xl bg-[#FFBF0F]">
 						<!-- left side -->
-						<div class="p-12 w-[60%] flex flex-col justify-center">
+						<div class="p-6 text-center lg:p-12 lg:w-[60%] flex flex-col justify-center">
 							<h1
 								class="text-title text-4xl font-[900] inter leading-9"
 							>
@@ -298,10 +298,10 @@
 						</div>
 
 						<!-- devider -->
-						<img src="./images/cupon-devider.png" alt="" />
+						<img src="./images/cupon-devider.png" alt="" class="hidden lg:flex" />
 
 						<!-- right side -->
-						<div class="p-6 flex flex-col justify-center">
+						<div class="p-6 flex w-full lg:w-[40%] text-center flex-col justify-center">
 							<h1
 								class="text-title text-4xl font-[900] raleway leading-[58px]"
 							>
@@ -314,9 +314,9 @@
 					</div>
 
 					<!-- card 2 -->
-					<div class="flex rounded-3xl bg-[#F78C9C]">
+					<div class="flex flex-col lg:flex-row rounded-3xl bg-[#F78C9C]">
 						<!-- left side -->
-						<div class="p-12 flex flex-col justify-center w-[60%]">
+						<div class="p-6 lg:p-12 flex flex-col justify-center text-center lg:w-[60%]">
 							<h1
 								class="text-title text-4xl font-[900] inter leading-9"
 							>
@@ -333,10 +333,10 @@
 						</div>
 
 						<!-- devider -->
-						<img src="./images/cupon-devider.png" alt="" />
+						<img src="./images/cupon-devider.png" alt="" class="hidden lg:flex" />
 
 						<!-- right side -->
-						<div class="p-6 flex flex-col justify-center">
+						<div class="p-6 flex flex-col text-center lg:w-[40%]  justify-center">
 							<h1
 								class="text-title text-4xl font-[900] raleway leading-[58px]"
 							>
@@ -368,7 +368,7 @@
 
 				<!-- section discription -->
 				<p
-					class="text-disc mb-12 mt-5 text-lg w-1/2 text-center leading-9 inter"
+					class="text-disc mb-12 mt-5 text-sm lg:text-lg w-[90%] lg:w-1/2 text-center leading-7 lg:leading-9 inter"
 				>
 					Yes, you can run unit tests and view the results directly
 					within the app. The integrated testing features allow for a
@@ -380,9 +380,9 @@
 					<!-- top card -->
 					<div class="flex flex-col lg:flex-row bg-white rounded-3xl">
 						<!-- left side -->
-						<div class="">
+						<div class="lg:w-[70%] mb-8 lg:mr-8">
 							<!-- top -->
-							<div class="flex justify-between py-10 px-8">
+							<div class="flex flex-wrap gap-8 lg:gap-0 items-center justify-center lg:justify-between py-10 px-8">
 								<!-- title -->
 								<div
 									class="flex items-center justify-center gap-3"
@@ -394,11 +394,11 @@
 									/>
 									<div>
 										<h1
-											class="raleway text-3xl font-bold text-[#030712] mb-1"
+											class="raleway text-xl lg:text-3xl font-bold text-[#030712] mb-1"
 										>
 											NS Paribahan
 										</h1>
-										<p class="inter text-disc text-lg">
+										<p class="inter text-disc text-sm lg:text-lg">
 											Coach-009-WEB ! AC_Business
 										</p>
 									</div>
@@ -417,7 +417,7 @@
 
 							<!-- down -->
 							<div
-								class="divide-y divide-dashed ml-8 px-8 bg-[#F7F8F8] py-8 rounded-3xl"
+								class="divide-y divide-dashed lg:ml-8 px-8 bg-[#F7F8F8] py-8 rounded-3xl"
 							>
 								<div class="flex justify-between pb-6">
 									<h1
@@ -445,7 +445,7 @@
 									</p>
 								</div>
 
-								<div class="grid grid-cols-3 gap-6 pt-6">
+								<div class="flex flex-wrap justify-center lg:grid grid-cols-3 gap-6 pt-6">
 									<button
 										class="btn text-title text-base font-medium inter"
 									>
@@ -474,7 +474,7 @@
 
 						<!-- right side -->
 						<div
-							class="flex flex-col items-center justify-center mx-auto"
+							class="flex flex-col items-center mb-8 lg:mb-0 justify-center mx-auto"
 						>
 							<img src="./images/fare.png" alt="" />
 							<h1
@@ -500,7 +500,7 @@
 							<div class="divide-y divide-dashed w-full">
 								<!-- title -->
 								<h1
-									class="text-[#030712] text-2xl font-semibold raleway mb-6"
+									class="text-[#030712] text-center lg:text-left text-2xl font-semibold raleway mb-6"
 								>
 									Select Your Seat
 								</h1>
@@ -558,52 +558,52 @@
 									<!-- a to j -->
 									<div class="grid items-center space-y-6">
 										<p
-											class="uppercase text-lg inter text-disc font-medium"
+											class="uppercase lg:text-lg inter text-disc font-medium"
 										>
 											a
 										</p>
 										<p
-											class="uppercase text-lg inter text-disc font-medium"
+											class="uppercase lg:text-lg inter text-disc font-medium"
 										>
 											b
 										</p>
 										<p
-											class="uppercase text-lg inter text-disc font-medium"
+											class="uppercase lg:text-lg inter text-disc font-medium"
 										>
 											c
 										</p>
 										<p
-											class="uppercase text-lg inter text-disc font-medium"
+											class="uppercase lg:text-lg inter text-disc font-medium"
 										>
 											d
 										</p>
 										<p
-											class="uppercase text-lg inter text-disc font-medium"
+											class="uppercase lg:text-lg inter text-disc font-medium"
 										>
 											e
 										</p>
 										<p
-											class="uppercase text-lg inter text-disc font-medium"
+											class="uppercase lg:text-lg inter text-disc font-medium"
 										>
 											f
 										</p>
 										<p
-											class="uppercase text-lg inter text-disc font-medium"
+											class="uppercase lg:text-lg inter text-disc font-medium"
 										>
 											g
 										</p>
 										<p
-											class="uppercase text-lg inter text-disc font-medium"
+											class="uppercase lg:text-lg inter text-disc font-medium"
 										>
 											h
 										</p>
 										<p
-											class="uppercase text-lg inter text-disc font-medium"
+											class="uppercase lg:text-lg inter text-disc font-medium"
 										>
 											i
 										</p>
 										<p
-											class="uppercase text-lg inter text-disc font-medium"
+											class="uppercase lg:text-lg inter text-disc font-medium"
 										>
 											j
 										</p>
@@ -617,61 +617,61 @@
 											<!-- col 1 -->
 											<div class="grid space-y-4">
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													a1
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													b1
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													c1
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													d1
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													e1
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													f1
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													g1
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													h1
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													i1
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													j1
 												</button>
@@ -680,61 +680,61 @@
 											<!-- col 2 -->
 											<div class="grid space-y-4">
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													a2
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													b2
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													c2
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													d2
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													e2
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													f2
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													g2
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													h2
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													i2
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													j2
 												</button>
@@ -745,61 +745,61 @@
 											<!-- col 3 -->
 											<div class="grid space-y-4">
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													a3
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													b3
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													c3
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													d3
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													e3
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													f3
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													g3
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													h3
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													i3
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													j3
 												</button>
@@ -808,61 +808,61 @@
 											<!-- col 4 -->
 											<div class="grid space-y-4">
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													a4
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													b4
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													c4
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													d4
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													e4
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													f4
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													g4
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													h4
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													i4
 												</button>
 
 												<button
-													class="btn seat uppercase text-disc font-medium inter text-lg"
+													class="btn seat uppercase text-disc font-medium inter lg:text-lg"
 												>
 													j4
 												</button>
@@ -875,8 +875,8 @@
 
 						<!-- right side -->
 						<div class="lg:w-[40%]">
-							<div class="w-full">
-								<div class="divide-y w-full divide-dashed pl-8">
+							<div class="w-full ">
+								<div class="divide-y mt-8 lg:mt-0 w-full divide-dashed pl-8">
 									<h1
 										class="text-2xl font-semibold raleway text-[030712] mb-6"
 									>
@@ -1047,9 +1047,10 @@
 									/>
 
 									<button
+										disabled
 										id="next"
 										onclick="submit()"
-										class="btn font-extrabold text-xl hidden raleway hover:text-link rounded-xl text-white w-full bg-theme"
+										class="btn font-extrabold text-xl disabled:opacity-75 raleway hover:text-link rounded-xl text-white w-full bg-theme"
 									>
 										Next
 									</button>
